@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
 import Head from 'next/head'
+import Layoutwrapper from '@/container/Layoutwrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,11 @@ export default function RootLayout({
        <Head>
         <link rel="stylesheet" href="https://use.typekit.net/pdx5wfj.css" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Layoutwrapper>
+          {children}
+        </Layoutwrapper>
+      </body>
     </html>
   )
 }
