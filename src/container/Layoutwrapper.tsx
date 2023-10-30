@@ -4,7 +4,7 @@ import { IChildren } from '@/types/children'
 
 const Layoutwrapper:FC<IChildren> = ({children}) => {
   return (
-    <div className='h-screen overflow-auto bg-dark '>
+    <div className='h-screen overflow-auto bg-white pt-4 px-4'>
         <Providers>
             {children}
         </Providers>

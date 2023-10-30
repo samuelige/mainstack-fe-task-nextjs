@@ -4,9 +4,11 @@ module.exports = {
     },
     colors: {
         gray400: '#56616B',
-        black300: '#131316'
+        black300: '#131316',
     },
-    backgroundColor: {},
+    backgroundColor: {
+        white: '#FFF'
+    },
     backgroundImage: {},
     borderColor: {},
     
