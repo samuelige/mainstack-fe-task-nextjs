@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 const theme = require("./theme");
-const {fontFamily, colors, backgroundColor, backgroundImage} = theme;
+const {fontFamily, colors, backgroundColor, backgroundImage, boxShadow} = theme;
 
 const config: Config = {
   important: true,
@@ -17,6 +17,7 @@ const config: Config = {
       colors,
       backgroundColor,
       backgroundImage,
+      boxShadow,
       screens: {
         'xl-1': '1281px',
       }

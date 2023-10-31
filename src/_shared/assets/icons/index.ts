@@ -1,0 +1,8 @@
+export { default as home_icon } from "./home_icon.svg?url"
+export { default as analytics_icon } from "./analytics_icon.svg?url"
+export { default as apps_icon } from "./apps_icon.svg?url"
+export { default as chat_icon } from "./chat_icon.svg?url"
+export { default as crm_icon } from "./crm_icon.svg?url"
+export { default as menu_icon } from "./menu_icon.svg?url"
+export { default as notify_icon } from "./notify_icon.svg?url"
+export { default as revenue_icon } from "./revenue_icon.svg?url"
