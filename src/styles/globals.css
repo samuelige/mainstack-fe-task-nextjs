@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "MuiOverrides/index.css";
 @import "./reset.css";
 
 

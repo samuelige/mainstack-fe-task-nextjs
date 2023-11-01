@@ -1,0 +1,11 @@
+.MuiButtonBase-root.MuiTab-root {
+  @apply text-sm !important;
+}
+
+.MuiButtonBase-root.MuiTab-root.Mui-selected {
+  @apply text-black300 bg-gray50 !important;
+}
+
+.MuiTabs-indicator {
+  @apply hidden !important;
+}
