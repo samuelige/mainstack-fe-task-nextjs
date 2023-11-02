@@ -5,7 +5,6 @@ import TransactionHeader from './TransactionHeader'
 import TransactionLists from './TransactionLists'
 import { useQuery } from 'react-query';
 import {fetchAllTransactionsDataAction} from "@/api/revenue.actions"
-import CustomLoader from '@/_shared/components/CustomLoader';
 import SkeletonLoaderMd from '@/_shared/components/SkeletonLoader/SkeletonLoaderMd';
 
 const Transactions = () => {
@@ -17,7 +16,7 @@ const Transactions = () => {
     );
 
   return (
-    <section className="mt-[6.37rem] space-y-[2.06rem]">
+    <section className="mt-16 space-y-16 md:mt-[6.37rem] md:space-y-[2.06rem]">
         {
             !isLoading_Transactions ? (
                 <>

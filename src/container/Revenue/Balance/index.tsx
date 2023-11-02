@@ -17,15 +17,15 @@ const BalanceContainer = () => {
         }
     );
   return (
-    <div className='flex col lg:space-x-[7.74rem] lg:flex-row items-start justify-between'>
+    <div className='flex flex-col-reverse lg:space-x-[7.74rem] lg:flex-row items-start justify-between'>
       {
         !isLoading_Wallet ? (
             <>
-              <div className='flex flex-col'>
+              <div className='mt-8 lg:mt-0 flex flex-col'>
                 <AvailableBalance balance={toCurrency(getWalletData?.data?.balance, "USD")}/>
                 <DataChart/>
               </div>
-              <div className='flex flex-col w-[16.9375rem]'>
+              <div className='w-full flex flex-col lg:w-[16.9375rem]'>
                 <Categories data={getWalletData?.data}/>
               </div>
             </>

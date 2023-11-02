@@ -32,7 +32,7 @@ const HeaderNav = () => {
     },
   ]
   return (
-    <ul className='flex flex-row space-x-5'>
+    <ul className='hidden lg:flex lg:flex-row lg:space-x-5'>
       {
         navItems?.map(({imageSrc, name, isActive}, index) => (
           <NavList

@@ -7,12 +7,12 @@ import { BsDownload } from "react-icons/bs";
 
 const TransactionHeader:FC<{total: number}> = ({total}) => {
   return (
-    <div className="w-full flex flex-row items-start justify-between">
+    <div className="w-full flex flex-col md:flex-row items-start md:justify-between">
         <div>
             <TitleMd>{total || "0"} Transactions</TitleMd>
             <TitleSm>Your transactions for the last 7 days</TitleSm>
         </div>
-        <div className="flex flex-row items-center space-x-3">
+        <div className="mt-6 md:mt-0 flex flex-row items-center space-x-3">
             <Button
                 component="label"
                 variant="contained"

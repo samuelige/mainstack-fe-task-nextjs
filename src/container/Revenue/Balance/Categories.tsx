@@ -12,7 +12,7 @@ interface CategoriesProps {
 
 const Categories:FC<{data:CategoriesProps}> = ({data}) => {
   return (
-    <div className='flex flex-col space-y-8'>
+    <div className='w-full grid  md:grid-cols-2 gap-7 lg:gap-0 lg:flex lg:flex-col lg:space-y-8'>
         <CategoryList
             title={"Ledger Balance"}
             amount={toCurrency(data?.ledger_balance, "USD")}

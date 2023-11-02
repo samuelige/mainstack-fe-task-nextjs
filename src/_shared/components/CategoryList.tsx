@@ -11,7 +11,7 @@ interface CategoryListPorps {
 
 const CategoryList:FC<CategoryListPorps> = ({title, amount}) => {
   return (
-    <li className='flex flex-row items-start justify-between'>
+    <li className='w-full flex flex-row items-start justify-between'>
         <div>
             <TitleSm>{title}</TitleSm>
             <h1 className='mt-2 text-[1.75rem] text-black300 font-bold leading-[2.375rem] tracking-[-0.09375rem]'>{amount}</h1>
