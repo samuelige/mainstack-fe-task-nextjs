@@ -1,0 +1,24 @@
+.MuiButtonBase-root {
+  @apply rounded-[6.25rem] h-[3rem] normal-case font-semibold text-base 
+        disabled:bg-opacity-40  !important;
+}
+
+/* contained variant */
+.MuiButton-contained {
+  @apply bg-gray50 border border-gray50 text-black300 disabled:bg-gray100 !important;
+}
+
+/* outline variant */
+.MuiButton-outlined {
+  @apply bg-white border border-gray50 text-black300 disabled:opacity-40 !important;
+}
+
+/* primary variant */
+.MuiButton-primary {
+  @apply bg-black300 border border-black300 text-white disabled:opacity-40 !important;
+}
+
+/* outline variant */
+.MuiButton-text {
+  @apply text-white disabled:opacity-40 !important;
+}

@@ -13,14 +13,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xl-1': '1281px',
+      },
+      height: {
+        'custom-100': 'calc(100vh - 5rem)',
+      },
       fontFamily,
       colors,
       backgroundColor,
       backgroundImage,
       boxShadow,
-      screens: {
-        'xl-1': '1281px',
-      }
     },
   },
   plugins: [],
