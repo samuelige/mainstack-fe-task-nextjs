@@ -7,14 +7,12 @@ import { useQuery } from 'react-query';
 import {fetchAllTransactionsDataAction} from "@/api/revenue.actions"
 
 const Transactions = () => {
-    const { data: getTransactionData, isLoading: isLoading_Transactions } = useQuery(['single_movie'],
+    const { data: getTransactionData, isLoading: isLoading_Transactions } = useQuery(['all_transactions'],
         fetchAllTransactionsDataAction,
         {
             refetchOnWindowFocus: false,
         }
     );
-
-    console.log(getTransactionData)
 
   return (
     <section className="mt-[6.37rem] space-y-[2.06rem]">

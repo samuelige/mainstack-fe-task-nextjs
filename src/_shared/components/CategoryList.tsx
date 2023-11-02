@@ -5,7 +5,7 @@ import TitleSm from './TitleSm';
 
 interface CategoryListPorps {
     title: string;
-    amount: number | string;
+    amount: number | string | any;
 }
 
 
