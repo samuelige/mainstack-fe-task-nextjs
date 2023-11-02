@@ -11,7 +11,7 @@ const Layoutwrapper:FC<IChildren> = ({children}) => {
   
 
   return (
-    <div className='h-screen overflow-auto [&::-webkit-scrollbar]:appearance-none pl-4 bg-white py-4 lg:px-4'>
+    <div className='h-screen overflow-auto [&::-webkit-scrollbar]:appearance-none pl-4 pr-1 bg-white py-4 lg:px-4'>
         <Providers>
           <Header/>
           <main className='flex flex-col w-full h-custom-100'>
