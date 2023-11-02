@@ -7,6 +7,7 @@ import DataChart from './DataChart'
 import Categories from './Categories'
 import {fetchWalletDataAction} from "@/api/revenue.actions"
 import { toCurrency } from '@/_lib/utils/toCurrency';
+import SkeletonLoaderMd from '@/_shared/components/SkeletonLoader/SkeletonLoaderMd';
 
 const BalanceContainer = () => {
   const { data: getWalletData, isLoading: isLoading_Wallet } = useQuery(['wallets'],
@@ -30,7 +31,7 @@ const BalanceContainer = () => {
             </>
         ):(
             <>
-                <p>loading</p>
+              <SkeletonLoaderMd/>
             </>
         )
       }
